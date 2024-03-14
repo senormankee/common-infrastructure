@@ -9,7 +9,7 @@ variable "region" {
 }
 
 variable "cluster_bucket_suffix" {
-  default     = "24-marketing-build"
+  default     = "test-build"
   type = string
   description = "Bucket where terraform states reside"
 }
