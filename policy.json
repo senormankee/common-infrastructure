@@ -1,0 +1,153 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "rds:CreateDBInstance",
+                "rds:DeleteDBInstance",
+                "rds:CreateDBSubnetGroup",
+                "rds:DeleteDBSubnetGroup",
+                "rds:AddTagsToResource",
+                "rds:DescribeDBSubnetGroups",
+                "rds:ListTagsForResource",
+                "rds:DescribeDBInstances"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:CreateKey",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:Decrypt"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:CreateVpc",
+                "ec2:CreateSubnet",
+                "ec2:CreateInternetGateway",
+                "ec2:CreateRouteTable",
+                "ec2:CreateTags",
+                "ec2:DeleteVpc",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeInternetGateways",
+                "ec2:DeleteSubnet",
+                "ec2:DeleteInternetGateway",
+                "ec2:DeleteRouteTable",
+                "ec2:DeleteTags",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:CreateNetworkInterface",
+                "ec2:AttachInternetGateway",
+                "ec2:DetachInternetGateway",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeVpcAttribute",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:DescribeAvailabilityZones"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:CreateHostedZone",
+                "route53:ChangeResourceRecordSets"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ecr:CreateRepository",
+                "ecr:DescribeRepositories",
+                "ecr:ListTagsForResource",
+                "ecr:DeleteRepository",
+                "ecr:GetAuthorizationToken",
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:GetRepositoryPolicy",
+                "ecr:ListImages",
+                "ecr:BatchGetImage"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ecs:RegisterTaskDefinition",
+                "ecs:DescribeTaskDefinition",
+                "ecs:ListTaskDefinitions",
+                "ecs:DescribeClusters",
+                "ecs:ListClusters",
+                "ecs:CreateService",
+                "ecs:UpdateService",
+                "ecs:DeleteService",
+                "ecs:DescribeServices",
+                "ecs:ListServices",
+                "ecs:DeregisterTaskDefinition",
+                "ecs:CreateCluster",
+                "ecs:TagResource",
+                "ecs:DeleteCluster"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreatePolicy",
+                "iam:CreateRole",
+                "iam:GetPolicy",
+                "iam:GetPolicyVersion",
+                "iam:ListPolicyVersions",
+                "iam:GetRole",
+                "iam:ListRolePolicies",
+                "iam:ListAttachedRolePolicies",
+                "iam:ListInstanceProfilesForRole",
+                "iam:DeletePolicy",
+                "iam:DeleteRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy",
+                "iam:CreateServiceLinkedRole",
+                "iam:DeleteServiceLinkedRole"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "iam:PassRole",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "timestream:*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iot:CreateTopicRule",
+                "iot:DeleteTopicRule",
+                "iot:ListTopicRules",
+                "iot:GetTopicRule",
+                "iot:ListTagsForResource"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
